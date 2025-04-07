@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --base-width: 1440; /* ширина макета, на которой ты делал верстку */
+    --scale: calc(100vw / var(--base-width)); /* пересчет масштаба */
+}
+@font-face {
+    font-family: 'Actay Wide Bd'; 
+    src: url('fonts/ActayFamily/ActayWide-Bold.otf') format('opentype');
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Actay'; 
+    src: url('fonts/ActayFamily/Actay-Regular.otf') format('opentype');
+    font-style: italic;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    font-family: "ActayWide";
+    background-image: url(img/Фон.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.header{
+    width: 90%;
+    height: 45px;
+    margin-left: 5%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+    font-family: 'Actay';
+    font-weight: 400;
+    font-size: 20px;
+}
+.header_left{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.header_right{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    border-bottom: 1px solid white;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.header_right img{
+    width: 16;
+    height: 16px;
+}
+.header_list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_title h2{
+    font-family: 'Actay Wide Bd';
+    font-weight: 700;
+    font-size: 90px;
+}
+.angle{
+    position: absolute;
+    top: -30%;
+    left: 110.5%;
+    transform: translateX(-100%);
+}
+.card {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #757966; 
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 15px 0px #FFFFFF59;
+    text-align: center;
+    width: 286px;
+    border-radius: 35px 0px 35px 0px;
+}
+
+.card_1 { top: 337px; left: 190px; }
+.card_2 { top: 570px; left: 260px; }
+.card_3 { top: 680px; left: 597px; }
+.card_4 { top: 440px; left: 545px; }
+.card_5 { top: 378px; left: 1009px; }
+.card_6 { top: 530px; left: 870px; }
+
+.line_1{position: absolute; top: 406px; left: 224px;}
+.line_2{position: absolute; top: 635px; left: 435px;}
+.line_3{position: absolute; top: 510px; left: 645px;}
+.line_4{position: absolute; top: 385px; left: 765px;}
+.line_5{position: absolute; top: 440px; left: 1050px;}
+
+
+.card_text {
+    font-family: 'Actay';
+    font-size: 14px;
+    line-height: 130%;
+    color: #F6FFD2;
+    text-align: left;
+}
+.card_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    display: none;
+}
+@media (max-width: 480px) {
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+    }
+    .header_list{
+        display: none;
+    }
+    .header_right{
+        display: none;
+    }
+    .main_title{
+        font-size: 35px;
+    }
+    .card{
+        width: 310px;
+        height: 232px;
+    }
+    .card_2, .card_3, .card_4, .card_5, .card_6{
+        display: none;
+    }
+    .line_1,
+    .line_2,
+    .line_3,
+    .line_4,
+    .line_5{
+        display: none;
+    }
+}
