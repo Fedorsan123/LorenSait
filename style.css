@@ -146,6 +146,9 @@ body{
         background: transparent;
         border: none;
     }
+    .header{
+        justify-content: normal;
+    }
     .header_list{
         display: none;
     }
