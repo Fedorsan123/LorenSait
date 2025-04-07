@@ -159,6 +159,10 @@ body{
         width: 310px;
         height: 232px;
     }
+    .card_1{
+        top: 50%
+        left: 20%
+    }
     .card_2, .card_3, .card_4, .card_5, .card_6{
         display: none;
     }
@@ -168,5 +172,9 @@ body{
     .line_4,
     .line_5{
         display: none;
+    }
+    .angle{
+        top: -12%;
+        left: 109.5%;
     }
 }
